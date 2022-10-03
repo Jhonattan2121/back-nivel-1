@@ -59,46 +59,7 @@ uma funçao vai pra dentro da callstack
 
 event loop vai monitorando utilizando o single-tread
 
-///////////////////////////////////////////////////
 
-
-
-as rotas utilizam metodos HTTP
-
-GET http://minhaapi.com/users
-    quando a gente quer buscar uma informação
-
-POST http://minhaapi.com/users
-    quer criar uma informação
-
-PUT http://minhaapi.com/users/1
-    alterar alguma informação
-
-Delete http://minhaapi.com/users/1
-deletar alguma informação
-
-(Users) recurso/Rota
-(GET, POST, PUT, DELETE) metodos HTTP
-(Criar um novo usuario) Parametro
-
-////////////////////////////////////////////////////////
-
-
-HTTP  codes
-
-todo HTTP que inica com 1XX é informatiional
-todo HTTP que inica com 2XX é SUccess
-    200 SUccess
-    201 created
-3xx redirrection
-    301 moved permanently
-    302 moved
-4xx  client error
-    400 bad request
-    401 unauthorized
-    404 not found
-5xx server error
-    500 intterrnal server error
 ////////////////////////////////////////////////////////
 
 primeiro projeto codigos
@@ -126,4 +87,41 @@ app.listen(3333, () => {
     console.log('back-end started')
 })
 
+ ////////////////////////////////////////////////////////
+
+
+as rotas utilizam metodos HTTP
+
+GET http://minhaapi.com/users
+    quando a gente quer buscar uma informação
+
+POST http://minhaapi.com/users
+    quer criar uma informação
+
+PUT http://minhaapi.com/users/1
+    alterar alguma informação
+
+Delete http://minhaapi.com/users/1
+deletar alguma informação
+
+(Users) recurso/Rota
+(GET, POST, PUT, DELETE) metodos HTTP
+(Criar um novo usuario) Parametro
+
+
+HTTP  codes
+
+todo HTTP que inica com 1XX é informatiional
+todo HTTP que inica com 2XX é SUccess
+    200 SUccess
+    201 created
+3xx redirrection
+    301 moved permanently
+    302 moved
+4xx  client error
+    400 bad request
+    401 unauthorized
+    404 not found
+5xx server error
+    500 intterrnal server error
 
